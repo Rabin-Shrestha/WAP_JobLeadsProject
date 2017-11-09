@@ -1,0 +1,19 @@
+body {
+    font-size: 1.8em;
+    line-height: 1.875;
+    font-family: body__font-family;
+    font-weight: 400;
+    color: #555;
+    background-color: #eeeeee;
+}
+main.main-container{
+    background: #FBFBFB;
+    width:90%;
+}
+.nav-btn{
+    float: right;
+    width: auto;
+    color: white;
+}
+
+
