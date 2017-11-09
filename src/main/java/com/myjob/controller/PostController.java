@@ -93,28 +93,6 @@ public class PostController extends HttpServlet {
                 Integer postType =  (request.getParameter("LoadSeekingJob") != null )? 2: 1;
                 List<PostDetail> pd= getAllPostDetailsGson(postType, logedInuser.getUserid(),false,response); // the json response listOfPostsGson will be forwarded
 
-                //HashMap<String, String> jsonData = new HashMap<String, String>();
-               // jsonData.put("post",postDetailGson);
-                //jsonData.put("Status","success");
-
-                // writing json data as response
-               /* PrintWriter out = null;
-                try {
-                    out = response.getWriter();
-                    out.write(new Gson().toJson(jsonData));
-
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
-                out.close();*/
-                //Type listType = new TypeToken<ArrayList<PostDetail>>(){}.getType();
-
-                //List<PostDetail> postDetailList = new Gson().fromJson(postDetailGson, listType);
-
-               // System.out.println("Post detail before :"+postDetailGson);
-                //System.out.println("Post detail after parsing :"+new Gson().toJson(postDetailGson));
-
-                //JSON.parse(jsonData);
                 System.out.println("Before Parsing :"+pd);
                 request.setAttribute("allPosts",pd);
                 System.out.println(" All Post detail"+new Gson().toJson(pd));
